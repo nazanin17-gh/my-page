@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="head">
+        <h1>محاسبه معدل دانشگاه</h1>
+        <p>به راحتی معدل ترم خود را محاسبه کنید</p>
+    </div>
+
+    <div class="section">
+        <div class="contaner">
+        <h1>افزودن درس</h1>
+        <div class="title">
+            <div class="subtitle">نام درس</div>
+            <div class="subtitle">تعداد واحد</div>
+            <div class="subtitle">نمره</div>
+        </div>
+
+        <div class="boxes">
+            <div class="subbox">
+                <input type="text" id="coursename"  placeholder="مثلا : برنامه نویسی">
+            </div>
+             <div class="subbox">
+                <input type="text" id="courseunit" placeholder="مثلا : 3">
+            </div>
+             <div class="subbox">
+                <input type="text" id="coursegrade" placeholder="مثلا : 17">
+            </div>
+            
+        </div>
+
+        <button class="btn" id="addcourse">
+            <span>+</span>
+            افزودن درس
+        </button>
+
+        <button class="btn" id="delete">
+            حذف
+        </button>
+
+
+    </div>
+    <div class="contaner">
+        <div class="res">
+            <h1>نتیجه معدل</h1>
+            <div class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calculator"><rect width="16" height="20" x="4" y="2" rx="2"/><line x1="8" x2="16" y1="6" y2="6"/><line x1="16" x2="16" y1="14" y2="18"/><path d="M16 10h.01"/><path d="M12 10h.01"/><path d="M8 10h.01"/><path d="M12 14h.01"/><path d="M8 14h.01"/><path d="M12 18h.01"/><path d="M8 18h.01"/></svg>
+            </div>
+        </div>
+        <div class="resnum">
+            <p>معدل ترم</p>
+            <span id="gpa">0.00</span>
+        </div>
+
+        <div class="result">
+            <div class="r1">مجموع واحد
+                <span id="totalunit">0</span>
+            </div>
+            <div class="r1">مجموع نمره
+                <span id="totalgrade">0</span>
+            </div>
+
+            <div></div>
+        </div>
+
+    </div>
+    </div>
+  
+
+<script src="script.js"></script>
+   
+</body>
+</html>
