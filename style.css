@@ -145,5 +145,24 @@ body{
     border-radius:15px ;
     box-shadow: 2px 2px 4px #e5e5e5;
 }
+@media screen and (max-width:997px){
+    .section{
+        flex-wrap: wrap;
+    }
+    
+}
+@media screen and (max-width:450px){
+    .head h1{
+        font-size: 20px;
+    }
+    
+}
+@media screen and (max-width:450px){
+    .subbox input{
+        height: 68px;
+        
+    }
+    
+}
 
 
